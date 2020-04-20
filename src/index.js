@@ -1,4 +1,4 @@
 import imgFunction from './script.js'
-import './styles/style.sass'
+import './styles/style.scss'
 
-imgFunction()
+//imgFunction()
