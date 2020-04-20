@@ -70,4 +70,6 @@ body {
   color: $black-main;
   background-color: $white;
   max-width: 1920px;
+  min-width: 375px;
+  margin: 0 auto;
 }

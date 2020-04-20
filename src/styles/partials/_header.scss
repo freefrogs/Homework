@@ -1,0 +1,89 @@
+@import "partials/variables";
+
+.header {
+  background-image: url(https://picsum.photos/id/100/1920/550);
+  background-size: cover;
+  &__menu {
+    width: 90%;
+    background-color: transparent;
+    justify-content: space-between;
+    justify-items: baseline;
+    @media (min-width: $xxl) {
+      width: 80%;
+    }
+    @media (max-width: $lg) {
+      width: 100%;
+    }
+  }
+  &__navbar {
+    @media (max-width: $lg) {
+      flex: 100%;
+    }
+  }
+  &__brand {
+    text-align: center;
+  }
+  &__logo {
+    max-height: 22px;
+    width: auto;
+    @media (max-width: $lg) {
+      max-height: 18px;
+    }
+  }
+  &__hamburger {
+    background-image: url(/assets/hamburger.png);
+  }
+  &__list {
+    padding: 37px 0 32px;
+    @media (max-width: $lg) {
+      padding: 17px 0 12px;
+    }
+    display: flex;
+    justify-content: space-between;
+    &--small {
+      justify-content: flex-end;
+    }
+  }
+  &__item--middle {
+    padding: 0 4px 0 25px;
+  }
+  &__link {
+    color: $black-main;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+    &--count {
+      display: inline-block;
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+      line-height: 16px;
+      height: 16px;
+      width: 16px;
+      background-color: $black-main;
+      color: $white;
+      border-radius: 50%;
+      vertical-align: top;
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+    &:hover {
+      border-bottom: 2px solid $black-main;
+      color: $black-main;
+      @media (max-width: $lg) {
+        border-bottom: 2px solid transparent;
+      }
+    }
+  }
+  &__hero {
+    height: 450px;
+    display: flex;
+  }
+  &__slogan {
+    margin: auto;
+  }
+}

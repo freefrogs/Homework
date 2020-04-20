@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../assets/fonts/RedHatDisplay-Regular.ttf */ \"./src/assets/fonts/RedHatDisplay-Regular.ttf\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \"@font-face {\\n  font-family: \\\"Red Hat Display\\\";\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \"); }\\n\\n/* basic reset */\\n*,\\n*:before,\\n*:after {\\n  -webkit-box-sizing: border-box;\\n  -moz-box-sizing: border-box;\\n  -ms-box-sizing: border-box;\\n  box-sizing: border-box; }\\n\\nhtml, body, div, span, applet, object, iframe,\\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\\na, abbr, acronym, address, big, cite, code,\\ndel, dfn, em, img, ins, kbd, q, s, samp,\\nsmall, strike, strong, sub, sup, tt, var,\\nb, u, i, center,\\ndl, dt, dd, ol, ul, li,\\nfieldset, form, label, legend,\\ntable, caption, tbody, tfoot, thead, tr, th, td,\\narticle, aside, canvas, details, embed,\\nfigure, figcaption, footer, header, hgroup,\\nmenu, nav, output, ruby, section, summary,\\ntime, mark, audio, video {\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n  font-size: 100%;\\n  font-family: inherit;\\n  vertical-align: baseline; }\\n\\nform {\\n  margin: 0; }\\n\\nbutton,\\ninput,\\nselect,\\ntextarea {\\n  font-size: 100%;\\n  margin: 0;\\n  vertical-align: baseline; }\\n\\nul, ol {\\n  list-style: none; }\\n\\n:focus,\\na:active,\\na:hover {\\n  outline: 0; }\\n\\nimg {\\n  border: 0;\\n  -ms-interpolation-mode: bicubic; }\\n\\n/* main */\\nbody {\\n  font-family: \\\"Red Hat Display\\\", Arial;\\n  color: #151515;\\n  background-color: #ffffff;\\n  max-width: 1920px; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../assets/fonts/RedHatDisplay-Regular.ttf */ \"./src/assets/fonts/RedHatDisplay-Regular.ttf\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \"@font-face {\\n  font-family: \\\"Red Hat Display\\\";\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \"); }\\n\\n/* basic reset */\\n*,\\n*:before,\\n*:after {\\n  -webkit-box-sizing: border-box;\\n  -moz-box-sizing: border-box;\\n  -ms-box-sizing: border-box;\\n  box-sizing: border-box; }\\n\\nhtml, body, div, span, applet, object, iframe,\\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\\na, abbr, acronym, address, big, cite, code,\\ndel, dfn, em, img, ins, kbd, q, s, samp,\\nsmall, strike, strong, sub, sup, tt, var,\\nb, u, i, center,\\ndl, dt, dd, ol, ul, li,\\nfieldset, form, label, legend,\\ntable, caption, tbody, tfoot, thead, tr, th, td,\\narticle, aside, canvas, details, embed,\\nfigure, figcaption, footer, header, hgroup,\\nmenu, nav, output, ruby, section, summary,\\ntime, mark, audio, video {\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n  font-size: 100%;\\n  font-family: inherit;\\n  vertical-align: baseline; }\\n\\nform {\\n  margin: 0; }\\n\\nbutton,\\ninput,\\nselect,\\ntextarea {\\n  font-size: 100%;\\n  margin: 0;\\n  vertical-align: baseline; }\\n\\nul, ol {\\n  list-style: none; }\\n\\n:focus,\\na:active,\\na:hover {\\n  outline: 0; }\\n\\nimg {\\n  border: 0;\\n  -ms-interpolation-mode: bicubic; }\\n\\n/* main */\\nbody {\\n  font-family: \\\"Red Hat Display\\\", Arial;\\n  color: #151515;\\n  background-color: #ffffff;\\n  max-width: 1920px; }\\n\\n.header {\\n  background-image: url(https://picsum.photos/id/100/1920/550);\\n  background-size: cover; }\\n  .header_menu {\\n    width: 90%;\\n    background-color: transparent; }\\n  .header_hero {\\n    min-height: 500px;\\n    max-height: 550px; }\\n  .header_logo {\\n    max-height: 22px;\\n    width: auto;\\n    order: 1; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -145,6 +145,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/assets/logo-zonex.png":
+/*!***********************************!*\
+  !*** ./src/assets/logo-zonex.png ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"assets/logo-zonex.png\");\n\n//# sourceURL=webpack:///./src/assets/logo-zonex.png?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -153,7 +165,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./script.js */ \"./src/script.js\");\n/* harmony import */ var _script_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_script_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ \"./src/styles/style.scss\");\n/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n //imgFunction()\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _script_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./script.js */ \"./src/script.js\");\n/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ \"./src/styles/style.scss\");\n/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n //imgFunction()\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -161,10 +173,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scr
 /*!***********************!*\
   !*** ./src/script.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("/* import daftcodeImgUrl from './assets/daftcode.png'\r\n\r\nexport default function() {\r\n  const section = document.createElement('section')\r\n  const img = document.createElement('img')\r\n  img.src = daftcodeImgUrl\r\n  section.appendChild(img)\r\n  document.body.appendChild(section)\r\n}\r\n */\n\n//# sourceURL=webpack:///./src/script.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_logo_zonex_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/logo-zonex.png */ \"./src/assets/logo-zonex.png\");\n\n/* import daftcodeImgUrl from './assets/daftcode.png'\r\n\r\nexport default function() {\r\n  const section = document.createElement('section')\r\n  const img = document.createElement('img')\r\n  img.src = daftcodeImgUrl\r\n  section.appendChild(img)\r\n  document.body.appendChild(section)\r\n}\r\n */\n\n//# sourceURL=webpack:///./src/script.js?");
 
 /***/ }),
 
