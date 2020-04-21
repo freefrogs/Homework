@@ -54,6 +54,8 @@ ul, ol {
 }
 
 :focus,
+button:active,
+button:hover,
 a:active,
 a:hover {
   outline: 0;

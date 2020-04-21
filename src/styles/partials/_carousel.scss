@@ -1,0 +1,108 @@
+@import "partials/variables";
+
+.slider {
+  min-height: 424px;
+  max-height: 438px;
+  background-color: $carousel-color;
+  padding: 50px 0;
+  position: relative;
+  &__body {
+    margin: 0 auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 80%;
+    @media (min-width: $xxl) {
+      width: 70%;
+    }
+    @media (max-width: $lg) {
+      width: 90%;
+    }
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-gap: 30px;
+    grid-auto-flow: column;
+    margin: auto;
+  }
+  &__item {
+    position: relative;
+    width: 268px;
+    height: 338px;
+    &--transition {
+      transition: 0.3s;
+    }
+    &__desc {
+      position: absolute;
+      bottom: 19px;
+      left: 20px;
+      font-size: 13px;
+      z-index: 10
+    }
+    &__name {
+      font-weight: 500;
+      color: $grey-desc;
+    }
+    &__price {
+      font-weight: bold;
+      color: $black-main;
+    }
+    &__overlay {
+      width: 268px;
+      height: 338px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
+    &:hover .slider__item__price {
+      color: $white;
+    }
+    &:hover .slider__item__name {
+      color: $white;
+    }
+    &:hover .slider__item__overlay {
+      background-color: $black-main;
+      opacity: 0.6;
+    }
+  }
+  &__button {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid $white;
+    position: absolute;
+    top: 50%;
+    &:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+    @media (max-width: $lg) {
+      height: 24px;
+      top: 95%;
+    }
+    &--prev {
+      left: 2%;
+      transform: translate(50%, -50%);
+      display: none;
+      @media (min-width: $xxl) {
+        left: 5%;
+      }
+      @media (max-width: $lg) {
+        left: 30%;
+      }
+    }
+    &--next {
+      right: 2%;
+      transform: translate(-50%,-50%);
+      @media (min-width: $xxl) {
+        right: 5%;
+      }
+      @media (max-width: $lg) {
+        right: 30%;
+      }
+    }
+  }
+}
