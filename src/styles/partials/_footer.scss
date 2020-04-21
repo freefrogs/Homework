@@ -1,0 +1,50 @@
+@import "partials/variables";
+
+.footer {
+  &__link--policy {
+    font-size: 13px;
+    color: $black-main;
+    font-weight: bold;
+    &:hover {
+      color: $black-main;
+      text-decoration: none;
+      text-shadow: 0 2px 2px $grey-placeholder;
+    }
+  }
+  &__box {
+    @media (max-width: $xl) {
+      justify-content: center!important;
+    }
+    @media (max-width: $lg) {
+      justify-content: flex-start!important;
+    }
+    &--selection {
+      font-size: 13px;
+      color: $grey-footer;
+      font-weight: 500;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &__selection--currency {
+    margin-right: 60px;
+  }
+  &__select {
+    border: none;
+  }
+  &__label {
+    padding: .5rem 14px .5rem 0;
+  }
+  &__rights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    @media (max-width: $lg) {
+      height: 60px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
