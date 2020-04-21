@@ -1,4 +1,4 @@
-//import script from './script.js'
+import script from './script.js'
 import './styles/style.scss'
 
 document.addEventListener('DOMContentLoaded', function() {

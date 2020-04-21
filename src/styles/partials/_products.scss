@@ -1,0 +1,121 @@
+@import "partials/variables";
+
+.products {
+  &__title {
+    padding: 2em 0;
+    font-size: 48px;
+    color: $black-main;
+    font-weight: bold;
+    text-align: center;
+    @media (max-width: $lg) {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    @media (min-width: $xxl) {
+      width: 70%;
+    }
+    @media (max-width: $lg) {
+      width: 90%;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 15px;
+    }
+  }
+  &__card {
+    position: relative;
+    @media (max-width: $lg) {
+      margin-bottom: 45px;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+  &__option {
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $black-product;
+    padding-bottom: 12px;
+  }
+  &__icon {
+    margin-right: 7px;
+  }
+  &__name {
+    font-size: 13px;
+    font-weight: 500;
+    color: $grey-desc;
+  }
+  &__price {
+    font-size: 13px;
+    font-weight: bold;
+    color: $black-main;
+    padding-top: 11px;
+  }
+  &__cart {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    &__add {
+      font-size: 13px;
+      color: $black-main;
+      font-weight: bold;
+      margin-top: 11px;
+    }
+    &__icons {
+      display: flex;
+      width: 54px;
+      height: 17px;
+      justify-content: space-between;
+      justify-items: center;
+      margin-top: 11px;
+    }
+  }
+  &__button {
+    border: 2px solid $black-main;
+    background-color: transparent;
+    color: $black-main;
+    transition: 0.3s;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      background-color: rgba(0,0,0,0.6);
+    }
+    &--sale {
+      font-size: 10px;
+      font-weight: 900;
+      padding: 0.7em 1.2em;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      @media (max-width: $lg) {
+        top: 5px;
+        left:5px;
+      }
+    }
+    &--all {
+      font-size: 13px;
+      font-weight: 500;
+      padding: 1em 3em;
+      margin: auto;
+    }
+  }
+  &__cross {
+    text-decoration: line-through;
+    color: $grey-cross;
+  }
+  &__box {
+    display: flex;
+    padding: 100px 0;
+    @media (max-width: $lg) {
+      padding: 0 0 50px;
+    }
+  }
+}
