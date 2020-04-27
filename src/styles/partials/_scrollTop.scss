@@ -1,0 +1,28 @@
+@import "partials/variables";
+
+.aside {
+  background-color: $white;
+  height: 48px;
+  width: 48px;
+  box-shadow: 0 5px 30px $grey-shadow;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  right: 45px;
+  transform: translate(0,-50%);
+  z-index: 15;
+  transition: .3s;
+  cursor: pointer;
+  @media (max-width: $lg) {
+    right: 20px;
+  }
+  &:hover {
+    border: 1px solid $grey-cross;
+  }
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

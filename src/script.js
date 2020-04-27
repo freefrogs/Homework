@@ -17,4 +17,5 @@ import facebook from './assets/facebook.png'
 import instagram from './assets/instagram.png'
 import pinterest from './assets/pinterest.png'
 import payment from './assets/payment.png'
+import arrowTop from './assets/arrow-top.png'
 
