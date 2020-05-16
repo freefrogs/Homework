@@ -35,6 +35,7 @@ const allProducts = () => {
     },
     {
       img: 'https://picsum.photos/id/133/309/390',
+      option: 'none',
       name: 'Great dog',
       price: '$59.00'
     },

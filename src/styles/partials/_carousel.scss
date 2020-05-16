@@ -50,6 +50,12 @@
       font-weight: bold;
       color: $black-main;
     }
+    &__img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      height: 100%;
+    }
     &__overlay {
       width: 268px;
       height: 338px;
