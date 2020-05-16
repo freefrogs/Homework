@@ -1,26 +1,11 @@
-import { randomPrice, baseURL } from './utilities';
+import { randomPrice } from './utilities';
+import getCardsWithImage from './fetchingData';
 
-const getSliderData = async () => {
-  return fetch(baseURL(20,3))
-    .then((res) => res.json())
-    .then((data) => {
-      return data;
-    })
-    .catch((err) => console.log(err))
-}
 
 const addSliderProducts = async () => {
   const sliderBox = document.querySelector('.slider__content');
 
-  const allData = await getSliderData();
-  const cards = allData.cards;
-
-  let cardsWithImage = []
-  cards.forEach(card => {
-    if (card.imageUrl) {
-      cardsWithImage.push(card);
-    }
-  });
+  const cardsWithImage = await getCardsWithImage(20,3);
 
   const finalCards = cardsWithImage.slice(0,10);
 

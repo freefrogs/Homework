@@ -112,7 +112,7 @@
     color: $grey-cross;
   }
   &__box {
-    display: flex;
+    display: none;
     padding: 100px 0;
     @media (max-width: $lg) {
       padding: 0 0 50px;
