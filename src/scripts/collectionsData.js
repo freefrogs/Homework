@@ -4,10 +4,13 @@ const addCollections = async () => {
   const productsBox = document.querySelector('.collections__container');
   const collectionsLoader = document.querySelector('.loader--collections');
 
-  const cardsWithImage = await getCardsWithImage(8,5);
-  const finalCards = cardsWithImage.slice(0,4);
+  const cardsWithImage = await getCardsWithImage(8,5,'collections');
 
-  console.log(finalCards);
+  if (!cardsWithImage) {
+    return
+  }
+
+  const finalCards = cardsWithImage.slice(0,4);
 
   let card = 1
 

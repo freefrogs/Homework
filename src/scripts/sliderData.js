@@ -7,7 +7,11 @@ const addSliderProducts = async () => {
   const sliderLoader = document.querySelector('.loader--slider');
   const arrowNext = document.querySelector('.slider__button--next');
 
-  const cardsWithImage = await getCardsWithImage(20,1);
+  const cardsWithImage = await getCardsWithImage(20,1,'slider');
+
+  if (!cardsWithImage) {
+    return
+  }
 
   const finalCards = cardsWithImage.slice(0,10);
 

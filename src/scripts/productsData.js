@@ -6,7 +6,11 @@ const addMainProducts = async () => {
   const button = document.querySelector('.products__box');
   const productsLoader = document.querySelector('.loader--products');
 
-  const cardsWithImage = await getCardsWithImage(16,4);
+  const cardsWithImage = await getCardsWithImage(16,4,'products');
+
+  if (!cardsWithImage) {
+    return
+  }
 
   const finalCards = cardsWithImage.slice(0,8);
 

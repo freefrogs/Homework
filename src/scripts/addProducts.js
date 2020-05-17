@@ -22,7 +22,12 @@ const addProducts = () => {
       return
     }
 
-    const cardsWithImage = await getCardsWithImage(8,page);
+    const cardsWithImage = await getCardsWithImage(8,page,'products');
+
+    if (!cardsWithImage) {
+      return
+    }
+    
     const finalCards = cardsWithImage.slice(0,4);
 
     page++;
