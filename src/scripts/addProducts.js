@@ -7,8 +7,10 @@ const addProducts = () => {
   
   const showProducts = async () => {
     const productsBox = document.querySelector('.products__container');
+    const productsLoader = document.querySelector('.loader--products');
     
     button.style.display = 'none';
+    productsLoader.style.display = 'block';
 
     if (page >= 311) {
       const container = document.querySelector('.products');
@@ -16,6 +18,7 @@ const addProducts = () => {
       endOfProducts.classList.add('products__card--last');
       endOfProducts.innerHTML = '<p>You have reached the end of the products</p>'
       container.appendChild(endOfProducts);
+      productsLoader.style.display = 'none';
       return
     }
 
@@ -41,6 +44,7 @@ const addProducts = () => {
       productsBox.appendChild(product);
     });
 
+    productsLoader.style.display = 'none';
     button.style.display = 'flex';
   };
 

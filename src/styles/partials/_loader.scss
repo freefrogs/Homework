@@ -1,0 +1,72 @@
+@import "partials/variables";
+
+@keyframes hourglassA {
+	from, 75% { transform: rotate(0) }
+	to { transform: rotate(180deg) }
+}
+@keyframes hourglassB {
+	from { transform: scaleY(1) }
+	50%, to { transform: scaleY(0) }
+}
+@keyframes hourglassC {
+	from { transform: scaleY(0) }
+	50%, to { transform: scaleY(1) }
+}
+
+.loader {
+  padding: 1.5em;
+  &--white {
+    &__image {
+      &:before, &:after {
+        background: $white;
+      }
+    }
+    &__text {
+      color: $white;
+    }
+  }
+  &--black {
+    &__image {
+      &:before, &:after {
+        background: $black-main;
+      }
+    }
+    &__text {
+      color: $black-main;
+    }
+  }
+  &__image {
+    animation-duration: 2s;
+	  animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0 auto 1.5em auto;
+  	width: 3em;
+    height: 3em;
+    animation-name: hourglassA;
+	  background: $grey-cross;
+	  clip-path: polygon(0 0,100% 0,50% 50%,100% 100%,0 100%,50% 50%);
+	  -webkit-clip-path: polygon(0 0,100% 0,50% 50%,100% 100%,0 100%,50% 50%);
+    &:before, &:after {
+      animation-duration: 2s;
+	    animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      content: "";
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      transform-origin: 50% 100%;	
+    }
+    &:before {
+      animation-name: hourglassB;
+    }
+    &:after {
+      animation-name: hourglassC;
+    }
+  }
+  &__text {
+    text-align: center;
+  }
+}
+

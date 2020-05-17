@@ -4,6 +4,7 @@ import getCardsWithImage from './fetchingData';
 const addMainProducts = async () => {
   const productsBox = document.querySelector('.products__container');
   const button = document.querySelector('.products__box');
+  const productsLoader = document.querySelector('.loader--products');
 
   const cardsWithImage = await getCardsWithImage(16,4);
 
@@ -26,6 +27,7 @@ const addMainProducts = async () => {
     productsBox.appendChild(product);
   });
 
+  productsLoader.style.display = 'none';
   button.style.display = 'flex';
 }
 

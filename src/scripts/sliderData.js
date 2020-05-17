@@ -4,8 +4,10 @@ import getCardsWithImage from './fetchingData';
 
 const addSliderProducts = async () => {
   const sliderBox = document.querySelector('.slider__content');
+  const sliderLoader = document.querySelector('.loader--slider');
+  const arrowNext = document.querySelector('.slider__button--next');
 
-  const cardsWithImage = await getCardsWithImage(20,3);
+  const cardsWithImage = await getCardsWithImage(20,1);
 
   const finalCards = cardsWithImage.slice(0,10);
 
@@ -25,6 +27,9 @@ const addSliderProducts = async () => {
     `
     sliderBox.appendChild(slide);
   });
+
+  arrowNext.style.display = 'block';
+  sliderLoader.style.display = 'none';
 }
 
 export default addSliderProducts;

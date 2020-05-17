@@ -103,6 +103,7 @@
     &--next {
       right: 2%;
       transform: translate(-50%,-50%);
+      display: none;
       @media (min-width: $xxl) {
         right: 5%;
       }

@@ -1,8 +1,8 @@
 import getCardsWithImage from './fetchingData';
 
 const addCollections = async () => {
-  console.log('hello')
   const productsBox = document.querySelector('.collections__container');
+  const collectionsLoader = document.querySelector('.loader--collections');
 
   const cardsWithImage = await getCardsWithImage(8,5);
   const finalCards = cardsWithImage.slice(0,4);
@@ -26,6 +26,8 @@ const addCollections = async () => {
     productsBox.appendChild(product);
     card++
   });
+
+  collectionsLoader.style.display = 'none';
 }
 
 export default addCollections;

@@ -21,3 +21,4 @@ It is my training project as a part of Daftacademy Front-end Level UP 2020
 * images from [Lorem Picsum](https://picsum.photos/)
 * mockup from [DaftAcademy](https://daftacademy.pl/)
 * API: [The Gathering API](https://docs.magicthegathering.io/)
+* loader from [Jon Kantner](https://codepen.io/jkantner/pen/YzzgWRY)
