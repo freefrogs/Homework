@@ -1,6 +1,6 @@
 import slider from './slider'
 import scrollTop from './scrollTop'
-import allProducts from './allProducts'
+import addProducts from './addProducts'
 import getFooterYear from './footerData'
 import addSliderProducts from './sliderData'
 import addMainProducts from './productsData'
@@ -10,7 +10,7 @@ const startFunction = () => {
   addMainProducts();
   slider();
   scrollTop();
-  allProducts();
+  addProducts();
   getFooterYear();
 };
 

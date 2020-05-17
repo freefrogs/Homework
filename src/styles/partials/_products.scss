@@ -32,6 +32,12 @@
     @media (max-width: $lg) {
       margin-bottom: 45px;
     }
+    &--last {
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      padding-bottom: 40px;
+    }
   }
   &__image {
     width: 100%;
